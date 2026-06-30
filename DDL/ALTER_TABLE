@@ -1,0 +1,29 @@
+
+1. ALTER TABLE - Column Add karo
+ALTER TABLE employees
+ADD COLUMN experience INT;
+
+2. ALTER TABLE - Multiple columns add karo
+ALTER TABLE employees
+ADD COLUMN city VARCHAR(50),
+ADD COLUMN manager_name VARCHAR(50);
+
+
+3. Column Modify karo (datatype change)
+
+phone ka size change:
+ALTER TABLE employees
+MODIFY COLUMN phone VARCHAR(20);
+
+salary ka precision change:
+ALTER TABLE employees
+MODIFY COLUMN salary DECIMAL(12,2);
+
+
+4. Column Rename karo
+ALTER TABLE employees
+RENAME COLUMN job_title TO designation;
+
+5. Column Delete karo
+ALTER TABLE employees
+DROP COLUMN manager_name;
