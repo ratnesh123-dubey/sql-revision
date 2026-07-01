@@ -1,0 +1,5 @@
+-- Drop a table
+DROP TABLE employees;
+
+-- Drop a database
+DROP DATABASE sql_revision;
