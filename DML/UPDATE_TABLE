@@ -1,0 +1,26 @@
+
+Agar isi data ko UPDATE karna ho, to syntax kuch is tarah hoga:
+
+UPDATE employees
+SET salary = 80000,
+    designation = 'Senior Backend Developer'
+WHERE email = 'rahul.sharma@gmail.com';
+
+
+Agar Rahul ka department aur salary update karna ho:
+
+UPDATE employees
+SET department = 'Software Development',
+    salary = 90000
+WHERE emp_id = 1;
+
+
+Agar sabhi IT employees ki salary ₹5000 badhani ho:
+
+UPDATE employees
+SET salary = salary + 5000
+WHERE emp_id = 1;
+
+
+
+
