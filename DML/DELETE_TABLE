@@ -1,0 +1,8 @@
+
+-- Delete a Specific Record
+  DELETE FROM employees
+WHERE emp_id = 2;
+
+
+-- Delete All Records
+  DELETE FROM employees;
