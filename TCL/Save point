@@ -1,0 +1,13 @@
+UPDATE employees
+SET Salary = 70000
+WHERE emp_id = 1;
+
+SAVEPOINT sp1;
+
+UPDATE employees
+SET salary = 60000
+WHERE emp_id = 1;
+
+ROLLBACK TO sp1;
+
+COMMIT;
