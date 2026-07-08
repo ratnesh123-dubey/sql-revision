@@ -1,0 +1,4 @@
+
+REVOKE SELECT, INSERT, UPDATE
+ON sql_revision.employees
+FROM 'User_1';
