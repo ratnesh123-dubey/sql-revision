@@ -1,0 +1,4 @@
+
+GRANT SELECT, INSERT, UPDATE
+ON sql_revision.employees
+TO 'User_1';
