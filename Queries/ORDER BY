@@ -1,0 +1,16 @@
+
+--Sort Salary in Ascending Order(by default)
+Select * from employees
+order by salary
+
+--Sort Salary in Descending Order
+Select * from employees
+order by salary DESC;
+
+--Sort Salary in Ascending Order
+Select * from employees
+order by salary ASC;
+
+--Sort Department in Ascending Order and Salary in descending order
+SELECT * FROM employees
+ORDER BY department ASC, salary DESC;
