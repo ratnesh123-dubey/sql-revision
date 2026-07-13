@@ -1,0 +1,27 @@
+--Display the first 5 employees
+SELECT *
+FROM employees
+LIMIT 5;
+
+--Display records after skipping the first 2 rows
+SELECT *
+FROM employees
+LIMIT 2, 5;
+
+--Get the highest-paid employee
+SELECT *
+FROM employees
+ORDER BY salary DESC
+LIMIT 1;
+
+--Get the top 3 highest salaries
+SELECT employee_name, salary
+FROM employees
+ORDER BY salary DESC
+LIMIT 3;
+
+--OFFSET 20 → Ignore the first 20 rows (rows 1–20)
+--LIMIT 10 → Return the next 10 rows
+SELECT *
+FROM employees
+LIMIT 10 OFFSET 20;
