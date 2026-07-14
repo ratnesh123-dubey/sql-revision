@@ -1,0 +1,33 @@
+--Column Alias
+SELECT first_name AS Employee_Name,
+salary AS Monthly_Salary
+FROM employees;
+
+--Alias with Expressions
+SELECT first_name,
+salary * 12 AS Annual_Salary
+FROM employees;
+
+--Table Alias
+SELECT e.first_name,
+e.salary
+FROM employees AS e;
+
+--Alias in JOIN
+SELECT e.first_name,
+       d.department_name
+FROM employees AS e
+JOIN departments AS d
+ON e.department_id = d.department_id;
+
+--Alias with Aggregate Functions
+SELECT COUNT(*) AS Total_Employees
+FROM employees;
+
+--Alias with SUM
+SELECT SUM(salary) AS Total_Salary
+FROM employees;
+
+--Alias with AVG
+SELECT AVG(salary) AS Average_Salary
+FROM employees;
