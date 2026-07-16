@@ -1,0 +1,40 @@
+--Addition (+)
+SELECT first_name,
+       salary,
+       salary + 5000 AS New_Salary
+FROM employees;
+
+--Subtraction (-)
+SELECT first_name,
+		salary,
+        salary - 3000 AS Salary_after_Deduction
+FROM employees;
+
+--Multiplication (*)
+SELECT first_name,
+		 salary,
+         salary * 12 AS Annual_salary
+FROM employees;
+
+--Division (/)
+SELECT first_name,
+       salary,
+       salary / 2 AS Half_Salary
+FROM employees;
+
+--Modulus (%)
+SELECT first_name,
+       salary,
+       salary % 10000 AS Remainder
+FROM employees;
+
+--Using Arithmetic Operators in WHERE Clause
+SELECT *
+FROM employees
+WHERE salary + 5000 > 60000;
+
+--Using Multiple Arithmetic Operators
+SELECT emp_name,
+       salary,
+       (salary * 12) + 50000 AS Total_Annual_Income
+FROM employees;
