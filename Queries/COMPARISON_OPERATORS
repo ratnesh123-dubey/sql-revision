@@ -1,0 +1,40 @@
+--Equal To (=)
+SELECT *
+FROM employees
+WHERE salary = 50000;
+
+--Not Equal To (!=)
+SELECT *
+FROM employees
+WHERE salary != 50000;
+
+--Not Equal To (<>)
+SELECT *
+FROM employees
+WHERE salary <> 50000;
+
+--Greater Than (>)
+SELECT *
+FROM employees
+WHERE salary > 55000;
+
+--Less Than (<)
+SELECT *
+FROM employees
+WHERE salary < 55000;
+
+--Greater Than or Equal To (>=)
+SELECT *
+FROM employees
+WHERE salary >= 55000;
+
+--Less Than or Equal To (<=)
+SELECT *
+FROM employees
+WHERE salary <= 50000;
+
+--Using Multiple Comparison Operators
+SELECT *
+FROM employees
+WHERE salary >= 50000
+  AND salary <= 65000;
