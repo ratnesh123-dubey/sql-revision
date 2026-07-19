@@ -1,0 +1,28 @@
+--AND Operator
+SELECT *
+FROM employees
+WHERE department = 'IT'
+AND salary > 45000;
+
+--OR Operator
+SELECT *
+FROM employees
+WHERE department = 'HR'
+OR department = 'Finance';
+
+--NOT Operator
+SELECT *
+FROM employees
+WHERE NOT department = 'IT';
+
+--Combining AND and OR
+SELECT *
+FROM employees
+WHERE department = 'IT'
+OR salary > 65000;
+
+--Using Parentheses
+SELECT *
+FROM employees
+WHERE (department = 'IT' OR department = 'HR')
+AND salary >= 50000;
