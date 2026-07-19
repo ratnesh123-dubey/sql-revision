@@ -1,0 +1,19 @@
+--Salary BETWEEN 30000 and 60000
+SELECT *
+FROM employees
+WHERE salary BETWEEN 30000 AND 60000;
+
+--Using NOT BETWEEN
+SELECT *
+FROM employees
+WHERE salary NOT BETWEEN 30000 AND 60000;
+
+--BETWEEN with Dates
+SELECT *
+FROM employees
+WHERE hire_date BETWEEN '2023-01-01' AND '2023-12-31';
+
+--BETWEEN with Text
+SELECT *
+FROM employees
+WHERE name BETWEEN 'A' AND 'M';
