@@ -1,0 +1,30 @@
+-- Starts with 'A'
+SELECT *
+FROM employees
+WHERE first_name LIKE 'A%';
+
+-- Ends with 'n'
+SELECT *
+FROM employees
+WHERE first_name LIKE '%n';
+
+-- Contains 'hu'
+SELECT *
+FROM employees
+WHERE first_name LIKE '%hu%';
+
+-- Second character is 'r'
+SELECT *
+FROM employees
+WHERE first_name LIKE '_r%';
+
+--Exactly 5 characters
+SELECT *
+FROM employees
+WHERE first_name LIKE '_____';
+
+--Starts with 'A' and ends with 'n'
+SELECT *
+FROM employees
+WHERE first_name LIKE 'A%n';
+
