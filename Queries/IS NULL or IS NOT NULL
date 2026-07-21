@@ -1,0 +1,9 @@
+-- Find Employees Whose first name Is Missing
+SELECT *
+FROM employees
+WHERE first_name IS NULL;
+
+-- Find Employees Having first name
+SELECT *
+FROM employees
+WHERE first_name IS NOT NULL;
