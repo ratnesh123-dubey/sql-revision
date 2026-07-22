@@ -1,0 +1,39 @@
+-- Simple CASE WHEN
+SELECT 
+name,
+salary,
+CASE
+    WHEN salary < 30000 THEN 'Low Salary'
+    WHEN salary BETWEEN 30000 AND 60000 THEN 'Medium Salary'
+    ELSE 'High Salary'
+END AS salary_category
+FROM employees;
+
+-- Employee Bonus Calculation
+SELECT 
+name,
+salary,
+CASE
+    WHEN salary < 30000 THEN salary * 0.10
+    ELSE salary * 0.05
+END AS bonus
+FROM employees;
+
+-- CASE WHEN with UPDATE
+UPDATE employees
+SET status =
+CASE
+    WHEN salary > 50000 THEN 'Senior'
+    ELSE 'Junior'
+END;
+
+--CASE WHEN with Aggregate Functions
+SELECT
+COUNT(*) AS total_employee,
+SUM(
+    CASE
+        WHEN status='Active' THEN 1
+        ELSE 0
+    END
+) AS active_employee
+FROM employees;
