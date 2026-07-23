@@ -1,0 +1,16 @@
+-- INNER JOIN
+SELECT e.emp_id,
+       d.department_id
+FROM employees e
+INNER JOIN department d
+ON e.department = d.department;
+
+-- Multiple INNER JOINs
+SELECT e.emp_id,
+       d.department_id
+FROM employees e
+INNER JOIN department d
+ON e.department = d.department
+INNER JOIN Manager m
+ON d.department = m.department;
+
