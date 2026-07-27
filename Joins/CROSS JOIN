@@ -1,0 +1,6 @@
+SELECT
+    e.emp_id,
+    e.first_name,
+    d.department_id
+FROM employees e
+CROSS JOIN department d;
