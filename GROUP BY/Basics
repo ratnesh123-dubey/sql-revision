@@ -1,0 +1,28 @@
+-- Count employees department wise
+SELECT department, COUNT(*) AS total_employee
+FROM employees
+GROUP BY department;
+
+-- Department wise total salary
+SELECT department, SUM(salary) AS total_salary
+FROM employees
+GROUP BY department;
+
+-- Department wise average salary
+SELECT department, AVG(salary) AS avg_salary
+FROM employees
+GROUP BY department;
+
+--MAX() → Maximum value
+SELECT 
+    department,
+    MAX(salary) AS highest_salary
+FROM employees
+GROUP BY department;
+
+--MIN() → Minimum value
+SELECT 
+    department,
+    MIN(salary) AS lowest_salary
+FROM employees
+GROUP BY department;
