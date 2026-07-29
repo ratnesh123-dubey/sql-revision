@@ -1,0 +1,24 @@
+-- Department-wise employee count
+SELECT department, COUNT(*) AS employee_count
+FROM employees
+GROUP BY department
+HAVING COUNT(*) > 2;
+
+-- HAVING with SUM()
+SELECT department, SUM(salary) AS total_salary
+FROM employees
+GROUP BY department
+HAVING SUM(salary) > 100000;
+
+-- HAVING with AVG()
+SELECT department, AVG(salary) AS average_salary
+FROM employees
+GROUP BY department
+HAVING AVG(salary) > 50000;
+
+WHERE vs HAVING — Interview Important ⭐
+SELECT department, COUNT(*) AS employee_count
+FROM employees
+WHERE salary > 30000
+GROUP BY department
+HAVING COUNT(*) >= 2;
