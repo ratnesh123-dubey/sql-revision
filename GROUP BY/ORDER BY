@@ -1,0 +1,34 @@
+-- Order by Department Name (Ascending)
+SELECT department,
+       COUNT(*) AS total_employees
+FROM employees
+GROUP BY department
+ORDER BY department ASC;
+
+-- Order by Total Employees (Descending)
+SELECT department,
+       COUNT(*) AS total_employees
+FROM employees
+GROUP BY department
+ORDER BY total_employees DESC;
+
+-- Order by Average Salary
+SELECT department,
+       AVG(salary) AS avg_salary
+FROM employees
+GROUP BY department
+ORDER BY avg_salary DESC;
+
+-- Order by Maximum Salary
+SELECT department,
+       MAX(salary) AS highest_salary
+FROM employees
+GROUP BY department
+ORDER BY highest_salary DESC;
+
+-- Multiple ORDER BY Columns
+SELECT department,
+       COUNT(*) AS total_employees
+FROM employees
+GROUP BY department
+ORDER BY total_employees DESC, department ASC;
